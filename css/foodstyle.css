@@ -1,9 +1,9 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 html, body {
   height: 100%;
   overflow: auto;
@@ -11,15 +11,12 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
 }
-
-
 .intro {
   text-align: center;
   max-width: 700px;
   margin: 100px auto 60px auto;
   color: #fff;
 }
-
 .intro h1 {
   font-family: 'The Seasons', serif;
   color: #ec9736;
@@ -30,13 +27,11 @@ html, body {
   transform: translateY(40px);
   animation: fadeUp 1.2s ease-out forwards;
 }
-
 .intro h1 span {
   display: inline-block;
   color: #fff;
   animation: glow 2s ease-in-out infinite alternate;
 }
-
 .intro p {
   font-size: 18px;
   margin-bottom: 15px;
@@ -46,8 +41,6 @@ html, body {
   animation: fadeUp 1.4s ease-out forwards;
   animation-delay: 0.4s;
 }
-
-
 @keyframes fadeUp {
   to { opacity: 1; transform: translateY(0); }
 }
@@ -55,8 +48,6 @@ html, body {
   from { text-shadow: 0 0 5px #ec9736, 0 0 10px #ec9736; }
   to { text-shadow: 0 0 15px #ffb85c, 0 0 25px #ffb85c; }
 }
-
-
 .menu {
   max-width: 1100px;
   margin: 0 auto;
@@ -65,7 +56,6 @@ html, body {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-
 .menu-item {
   background: rgba(0, 0, 0, 0.65);
   padding: 15px;
@@ -76,7 +66,6 @@ html, body {
   gap: 15px;
 }
 .menu-item.reverse { flex-direction: row-reverse; }
-
 .menu-item img {
   width: 120px;
   height: 120px;
@@ -84,68 +73,16 @@ html, body {
   border-radius: 10px;
   flex-shrink: 0;
 }
-
 .menu-content { flex: 1; }
-
 .menu-item h2 {
   font-family: 'The Seasons', serif;
   font-size: 20px;
   margin-bottom: 6px;
   color: #ec9736;
 }
-
 .menu-item p {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   margin-bottom: 6px;
   line-height: 1.4;
 }
-
-
-.social-bottom {
-  list-style: none;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  display: flex;
-  gap: 6px;
-  padding: 0;
-  z-index: 100;
-}
-
-.social-bottom li a {
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border-radius: 50%;
-  display: block;
-  text-align: center;
-  line-height: 30px;
-  font-size: 14px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #fff;
-  transition: transform 0.3s;
-}
-.social-bottom li a .icon {
-  position: relative;
-  color: #262626;
-  transition: 0.5s;
-  z-index: 3;
-}
-.social-bottom li a:hover .icon { color: #fff; transform: rotateY(360deg); }
-.social-bottom li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-  z-index: 2;
-}
-.social-bottom li a:hover:before { top: 0; }
-.social-bottom li:nth-child(1) a:before { background: #E1306C; }
-.social-bottom li:nth-child(2) a:before { background: #0077b5; }
-.social-bottom li:nth-child(3) a:before { background: #DD4B39; }
-.social-bottom li:nth-child(4) a:before { background: #333; }

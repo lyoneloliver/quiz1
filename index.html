@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div class="page-transition-overlay"></div>
 
   <div class="burger-container">
     <a class="menu-toggle">
@@ -72,31 +73,7 @@
     <li><a href="https://github.com/lyoneloliver" target="_blank"><i class="fab fa-github icon"></i></a></li>
   </ul>
 
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const leftPanel = document.querySelector('.left-panel');
-    const headlineContainer = document.querySelector('.headline-container');
-
-    function toggleMenu() {
-      menuToggle.classList.toggle('open');
-      leftPanel.classList.toggle('show');
-
-      if (leftPanel.classList.contains('show')) {
-        headlineContainer.classList.add('rotate');
-      } else {
-        headlineContainer.classList.remove('rotate');
-      }
-    }
-
-    menuToggle.addEventListener('click', toggleMenu);
-
-    window.addEventListener('load', () => {
-      menuToggle.classList.add('open');
-      leftPanel.classList.add('show');
-      headlineContainer.classList.add('rotate');
-    });
-
-  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>

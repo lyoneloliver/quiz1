@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div class="page-transition-overlay"></div>
 
   <div class="burger-container">
     <a class="menu-toggle" aria-label="Toggle menu" role="button">
@@ -20,7 +21,6 @@
       <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
     </a>
   </div>
-
   <aside class="left-panel" aria-hidden="true">
     <div class="content">
       <nav>
@@ -32,7 +32,6 @@
       </nav>
     </div>
   </aside>
-
   <main>
     <div class="intro-container">
       <h1 class="intro-title">
@@ -42,16 +41,13 @@
           <span class="hover-text" aria-hidden="true">Surabaya</span>
         </span>
       </h1>
-
       <p class="intro-text">
-        The vibrant capital of East Java, is more than just a bustling city; it’s a place where history, culture, and
-        modern life blend seamlessly. Known as the “City of Heroes,” Surabaya offers a rich tapestry of experiences for
+        The vibrant capital of East Java, is more than just a bustling city; it's a place where history, culture, and
+        modern life blend seamlessly. Known as the "City of Heroes," Surabaya offers a rich tapestry of experiences for
         locals and visitors alike. From its lively markets to its iconic landmarks, every corner tells a story.
       </p>
     </div>
-
     <div class="places-wrap">
-
       <div class="place-container">
         <article class="place-card" aria-label="Mount Bromo">
           <img class="place-img" src="css/images/bromo.jpg" alt="Bromo" loading="lazy">
@@ -67,7 +63,6 @@
           dramatic landscapes. Visitors often enjoy trekking and jeep tours across the caldera.
         </div>
       </div>
-
       <div class="place-container">
         <article class="place-card" aria-label="House of Sampoerna">
           <img class="place-img" src="css/images/hos.jpeg" alt="House of Sampoerna" loading="lazy">
@@ -83,7 +78,6 @@
           cigarette industry. Visitors can explore the museum and watch the traditional cigarette rolling process.
         </div>
       </div>
-
       <div class="place-container">
         <article class="place-card" aria-label="Mangrove Forest">
           <img class="place-img" src="css/images/mangroove.jpg" alt="Mangrove Forest" loading="lazy">
@@ -99,7 +93,6 @@
           watching, and learning about the importance of mangroves in coastal protection.
         </div>
       </div>
-
       <div class="place-container">
         <article class="place-card" aria-label="Kenjeran Beach">
           <img class="place-img" src="css/images/kenjeran.jpg" alt="Kenjeran Beach" loading="lazy">
@@ -111,13 +104,12 @@
           </div>
         </article>
         <div class="place-desc">
-          Kenjeran Beach, on Surabaya’s eastern coast, offers a peaceful escape with gentle waves, cool sea breeze, and
+          Kenjeran Beach, on Surabaya's eastern coast, offers a peaceful escape with gentle waves, cool sea breeze, and
           colorful traditional fishing boats. Local vendors serve tasty Surabaya snacks and fresh seafood, while sunsets
           paint the sky in stunning shades of orange and purple, making it a perfect spot to relax and enjoy the coastal
           charm.
         </div>
       </div>
-
       <div class="place-container">
         <article class="place-card" aria-label="Surabaya Monument">
           <img class="place-img" src="css/images/surabaya.jpg" alt="Surabaya Monument" loading="lazy">
@@ -131,10 +123,9 @@
         <div class="place-desc">
           The Sura and Baya Monument, an iconic landmark of Surabaya, features statues of a shark (Sura) and a crocodile
           (Baya) locked in combat. The monument symbolizes the origin of the city's name and represents the courage and
-          fighting spirit of Surabaya’s people. It’s a popular spot for photos and relaxing around the area.
+          fighting spirit of Surabaya's people. It's a popular spot for photos and relaxing around the area.
         </div>
       </div>
-
     </div>
     <ul class="social-bottom">
       <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
@@ -142,25 +133,8 @@
       <li><a href="#"><i class="fas fa-envelope icon"></i></a></li>
       <li><a href="#"><i class="fab fa-github icon"></i></a></li>
     </ul>
-
   </main>
-
-  <script>
-
-
-    const menuToggle = document.querySelector('.menu-toggle');
-    const leftPanel = document.querySelector('.left-panel');
-
-    function toggleMenu() {
-      menuToggle.classList.toggle('open');
-      leftPanel.classList.toggle('show');
-    }
-
-    menuToggle.addEventListener('click', toggleMenu);
-
-
-  </script>
-
+  <script src="main.js"></script>
 </body>
 
 </html>

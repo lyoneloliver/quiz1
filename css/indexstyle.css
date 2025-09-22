@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow: auto;
   background: url('images/bg.jpg') center/cover no-repeat;
@@ -45,7 +46,7 @@ html, body {
   transform: scale(1.5);
   color: #fff;
   -webkit-text-stroke: 2px transparent;
-  text-shadow: 
+  text-shadow:
     0 0 10px #ffffff,
     0 0 20px #ffffff;
 }
@@ -56,11 +57,11 @@ html, body {
   color: #d33b34;
   margin-top: -20px;
   display: block;
+
 }
 
 .diag-text {
   font-size: 14px;
   letter-spacing: 4px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
-
