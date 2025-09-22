@@ -1,60 +1,127 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Local Food - Quiz1</title>
+  <title>Quiz 1-Food</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/foodstyle.css">
 </head>
+
 <body>
-  <header>
-    <h1>Local Food from My Hometown</h1>
-    <p>
-      This page highlights the delicious traditional foods  
-      that make my hometown special.
-    </p>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="profile.html">Profile</a> |
-      <a href="hometown.html">Hometown</a> |
-      <a href="food.html">Local Food</a> |
-      <a href="tourist.html">Tourist Places</a>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Traditional Dishes</h2>
-      <p>
-        My hometown is famous for its traditional dishes  
-        that reflect the culture and local ingredients.  
-        Here are some examples:
-      </p>
-      <ul>
-        <li><strong>Dish 1:</strong> </li>
-      </ul>
-    </section>
+  <div class="burger-container">
+    <a class="menu-toggle">
+      <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+      <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+      <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+    </a>
+  </div>
 
-    <section>
-      <h2>Food Culture</h2>
-      <p>
-        Surabaya’s food culture is known for its bold and spicy flavors, where sambal (chili paste) is almost always present on the table. The cuisine reflects a blend of influences from Javanese, Madurese, Chinese, and Arab traditions, making it rich and diverse. Portions are usually generous and hearty, matching the lively and outspoken character of the people of Surabaya.
-      </p>
-    </section>
+  <aside class="left-panel">
+    <div class="content">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="hometown.html">Hometown</a>
+        <a href="food.html" class="active">Local Food</a>
+        <a href="tourist.html">Tourist Places</a>
+      </nav>
+    </div>
+  </aside>
 
-    <section>
-      <h2>Why You Should Try Them</h2>
-      <ul>
-        <li>Unique flavors you can’t find elsewhere.</li>
-        <li>Made with fresh, local ingredients.</li>
-        <li>Represents the culture and history of the community.</li>
-        <li>Every dish has a story behind it.</li>
-      </ul>
-    </section>
-  </main>
+  <section class="intro">
+    <h1>
+      Surabaya's<br>
+      <span>Traditional Food</span>
+    </h1>
+    <p>Surabaya is not only known as the City of Heroes but also for its diverse culinary treasures. From hearty soups
+      to unique street food, every dish carries the bold flavors of East Java with a touch of local tradition. The food
+      here reflects the warmth and character of the people, making Surabaya a true paradise for food lovers.</p>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Leon — Local Food Page.</p>
-  </footer>
+  <section class="menu">
+    <div class="menu-item">
+      <img src="css/images/rawon.png" alt="Rawon">
+      <div class="menu-content">
+        <h2>Rawon</h2>
+        <p>Beef soup with black broth made from kluwek, served with rice and bean sprouts.</p>
+
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="css/images/rujak.png" alt="Rujak Cingur">
+      <div class="menu-content">
+        <h2>Rujak Cingur</h2>
+        <p>Mix of vegetables, lontong, tofu, tempe, and cow’s snout with spicy petis sauce.</p>
+
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="css/images/lontong.png" alt="Lontong Balap">
+      <div class="menu-content">
+        <h2>Lontong Balap</h2>
+        <p>Lontong with bean sprouts, fried tofu, lentho, and savory broth.</p>
+
+      </div>
+    </div>
+
+    <div class="menu-item reverse">
+      <img src="css/images/tahutek.png" alt="Tahu Tek">
+      <div class="menu-content">
+        <h2>Tahu Tek</h2>
+        <p>Fried tofu, potatoes, and egg topped with peanut-petis sauce and crackers.</p>
+
+      </div>
+    </div>
+
+    <div class="menu-item reverse">
+      <img src="css/images/sate.png" alt="Sate Klopo">
+      <div class="menu-content">
+        <h2>Sate Klopo</h2>
+        <p>Grilled meat skewers coated with grated coconut and spices, served with rice cake.</p>
+
+      </div>
+    </div>
+
+    <div class="menu-item reverse">
+      <img src="css/images/tahu.png" alt="Tahu Campur">
+      <div class="menu-content">
+        <h2>Tahu Campur</h2>
+        <p>A hearty dish combining fried tofu, noodles, lettuce, cassava cakes, and sliced beef in a warm savory broth
+          enriched with petis.</p>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <ul class="social-bottom">
+    <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+    <li><a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+    <li><a href="#"><i class="fas fa-envelope icon"></i></a></li>
+    <li><a href="#"><i class="fab fa-github icon"></i></a></li>
+  </ul>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const leftPanel = document.querySelector('.left-panel');
+
+    function toggleMenu() {
+      menuToggle.classList.toggle('open');
+      leftPanel.classList.toggle('show');
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+
+  </script>
+
+
 </body>
+
 </html>

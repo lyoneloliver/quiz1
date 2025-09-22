@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="id">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexstyle.css">
 </head>
+
 <body>
 
   <div class="burger-container">
@@ -33,12 +36,24 @@
   <div class="headline-container">
     <div class="headline">
       <div class="word">
-        <div class="hover"><h1>L</h1></div>
-        <div class="hover"><h1>Y</h1></div>
-        <div class="hover"><h1>O</h1></div>
-        <div class="hover"><h1>N</h1></div>
-        <div class="hover"><h1>E</h1></div>
-        <div class="hover"><h1>L</h1></div>
+        <div class="hover">
+          <h1>L</h1>
+        </div>
+        <div class="hover">
+          <h1>Y</h1>
+        </div>
+        <div class="hover">
+          <h1>O</h1>
+        </div>
+        <div class="hover">
+          <h1>N</h1>
+        </div>
+        <div class="hover">
+          <h1>E</h1>
+        </div>
+        <div class="hover">
+          <h1>L</h1>
+        </div>
       </div>
       <div class="accent">OLIVER DWIPUTRA</div>
     </div>
@@ -49,12 +64,39 @@
   <div class="corner br"></div>
 
   <ul class="social-bottom">
-    <li><a href="https://www.instagram.com/leonoliver1911/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/lyonel-oliver-1919312a4/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+    <li><a href="https://www.instagram.com/leonoliver1911/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+    </li>
+    <li><a href="https://www.linkedin.com/in/lyonel-oliver-1919312a4/" target="_blank"><i
+          class="fab fa-linkedin-in icon"></i></a></li>
     <li><a href="mailto:leonoliver1911@gmail.com"><i class="fas fa-envelope icon"></i></a></li>
     <li><a href="https://github.com/lyoneloliver" target="_blank"><i class="fab fa-github icon"></i></a></li>
   </ul>
 
-  <script src="main.js"></script>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const leftPanel = document.querySelector('.left-panel');
+    const headlineContainer = document.querySelector('.headline-container');
+
+    function toggleMenu() {
+      menuToggle.classList.toggle('open');
+      leftPanel.classList.toggle('show');
+
+      if (leftPanel.classList.contains('show')) {
+        headlineContainer.classList.add('rotate');
+      } else {
+        headlineContainer.classList.remove('rotate');
+      }
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+
+    window.addEventListener('load', () => {
+      menuToggle.classList.add('open');
+      leftPanel.classList.add('show');
+      headlineContainer.classList.add('rotate');
+    });
+
+  </script>
 </body>
+
 </html>
