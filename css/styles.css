@@ -1,4 +1,17 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  overflow: auto;
+  background: url('images/bg.jpg') center/cover no-repeat fixed;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
 .page-transition-overlay {
   position: fixed;
   top: 0;

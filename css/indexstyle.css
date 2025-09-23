@@ -1,17 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-  overflow: auto;
-  background: url('images/bg.jpg') center/cover no-repeat;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-}
 
 .headline-container {
   position: absolute;
