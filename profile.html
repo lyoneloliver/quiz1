@@ -8,89 +8,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/profilestyle.css">
-  <style>
-    .hobby-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .hobby-card {
-      width: 100%;
-      height: 80px;
-      perspective: 800px;
-    }
-
-    .hobby-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-      border-radius: 10px;
-    }
-
-    .hobby-card:hover .hobby-inner {
-      transform: rotateY(180deg);
-    }
-
-    .hobby-front,
-    .hobby-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      backface-visibility: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      color: #fff;
-      font-size: 1.05rem;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .hobby-back {
-      transform: rotateY(180deg);
-      background-size: cover;
-      background-position: center;
-    }
-
-    .h1 .hobby-back { background-image: url("css/images/h1.jpg"); }
-    .h2 .hobby-back { background-image: url("css/images/h2.jpg"); }
-    .h3 .hobby-back { background-image: url("css/images/h3.jpg"); }
-    .h4 .hobby-back { background-image: url("css/images/h4.jpg"); }
-    .h5 .hobby-back { background-image: url("css/images/h5.jpg"); }
-    .h6 .hobby-back { background-image: url("css/images/h6.jpg"); }
-    .h7 .hobby-back { background-image: url("css/images/h7.jpg"); }
-
-    .social-bottom {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      gap: 14px;
-      list-style: none;
-      z-index: 99;
-    }
-
-    .social-bottom a {
-      color: #fff;
-      font-size: 1.4rem;
-      transition: color 0.3s;
-    }
-
-    .social-bottom a:hover {
-      color: #ffb74d;
-    }
-  </style>
 </head>
 
 <body>
   <div class="page-transition-overlay"></div>
-
   <div class="burger-container">
     <a class="menu-toggle">
       <span class="menu-toggle-bar menu-toggle-bar--top"></span>
@@ -98,7 +19,6 @@
       <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
     </a>
   </div>
-
   <aside class="left-panel">
     <div class="content">
       <nav>
@@ -110,7 +30,6 @@
       </nav>
     </div>
   </aside>
-
   <section class="intro-hero profile-layout">
     <div class="polaroid reveal">
       <div class="card-container">
@@ -124,7 +43,6 @@
         </div>
       </div>
     </div>
-
     <div class="intro-text reveal">
       <h1 class="intro-title">
         Hello, I'm <span class="glint-text">Lyonel Oliver Dwiputra</span>
@@ -135,72 +53,80 @@
       </p>
     </div>
   </section>
-
   <section class="info-section">
     <div class="about reveal">
       <h2>About Me</h2>
       <p class="about-desc">
-        I'm a student passionate about data, technology, and learning.
-        I enjoy exploring topics in data analysis, statistics, and research.
-        Outside of academics, I love reading books, playing games, and spending quality time with friends.
+        I'm a student who enjoys exploring data, technology, and learning new things. I'm especially interested in data
+        analysis, statistics, and research, and I like figuring out patterns and insights from information. I enjoy
+        applying what I learn to solve problems and understand the world better.
+        Outside of studying, I like reading books, playing games, and spending time with friends. These activities help
+        me relax and stay balanced while keeping me curious about new ideas. I also enjoy trying new hobbies and
+        experiences that challenge me and let me grow personally.
       </p>
     </div>
-
     <div class="hobbies reveal">
       <h2>Hobbies & Interests</h2>
       <div class="hobby-grid">
         <div class="hobby-card h1">
           <div class="hobby-inner">
-            <div class="hobby-front">Coding</div>
-            <div class="hobby-back"></div>
+            <div class="hobby-front">
+              <img src="css/images/coding.png" alt="Coding">
+            </div>
+            <div class="hobby-back">Coding</div>
           </div>
         </div>
-
         <div class="hobby-card h2">
           <div class="hobby-inner">
-            <div class="hobby-front">Badminton</div>
-            <div class="hobby-back"></div>
+            <div class="hobby-front">
+              <img src="css/images/badminton.png" alt="Badminton">
+            </div>
+            <div class="hobby-back">Badminton</div>
           </div>
         </div>
-
         <div class="hobby-card h3">
           <div class="hobby-inner">
-            <div class="hobby-front">Swimming</div>
-            <div class="hobby-back"></div>
+            <div class="hobby-front">
+              <img src="css/images/swimming.png" alt="Swimming">
+            </div>
+            <div class="hobby-back">Swimming</div>
           </div>
         </div>
-
         <div class="hobby-card h4">
           <div class="hobby-inner">
-            <div class="hobby-front">Music</div>
-            <div class="hobby-back"></div>
+            <div class="hobby-front">
+              <img src="css/images/music.png" alt="Music">
+            </div>
+            <div class="hobby-back">Music</div>
           </div>
         </div>
-
         <div class="hobby-card h5">
           <div class="hobby-inner">
-            <div class="hobby-front">Traveling</div>
-            <div class="hobby-back"></div>
+            <div class="hobby-front">
+              <img src="css/images/traveling.png" alt="Traveling">
+            </div>
+            <div class="hobby-back">Traveling</div>
           </div>
         </div>
-
         <div class="hobby-card h6">
           <div class="hobby-inner">
-            <div class="hobby-front">Gaming</div>
-            <div class="hobby-back"></div>
+            <div class="hobby-front">
+              <img src="css/images/gaming.png" alt="Gaming">
+            </div>
+            <div class="hobby-back">Gaming</div>
           </div>
         </div>
-
         <div class="hobby-card h7">
           <div class="hobby-inner">
-            <div class="hobby-front">Reading</div>
-            <div class="hobby-back"></div>
+            <div class="hobby-front">
+              <img src="css/images/reading.png" alt="Reading">
+            </div>
+            <div class="hobby-back">Reading</div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section class="future-goal reveal">
     <h2>Future Goals</h2>
     <p class="future-desc">
@@ -208,16 +134,15 @@
       I hope to contribute to solving real-world problems by interpreting data and providing actionable insights.
     </p>
   </section>
-
   <ul class="social-bottom">
-    <li><a href="https://www.instagram.com/leonoliver1911/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/lyonel-oliver-1919312a4/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+    <li><a href="https://www.instagram.com/leonoliver1911/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+    </li>
+    <li><a href="https://www.linkedin.com/in/lyonel-oliver-1919312a4/" target="_blank"><i
+          class="fab fa-linkedin-in icon"></i></a></li>
     <li><a href="mailto:leonoliver1911@gmail.com"><i class="fas fa-envelope icon"></i></a></li>
     <li><a href="https://github.com/lyoneloliver" target="_blank"><i class="fab fa-github icon"></i></a></li>
   </ul>
-
   <script src="main.js"></script>
-
   <script>
     (function () {
       const reveals = document.querySelectorAll('.reveal');
@@ -237,4 +162,5 @@
     })();
   </script>
 </body>
+
 </html>
