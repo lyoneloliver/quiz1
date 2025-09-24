@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz 1 - Hometown</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/homestyle.css">
+  
+</head>
+<body>
+  <div class="page-transition-overlay"></div>
+  <div class="burger-container">
+    <a class="menu-toggle">
+      <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+      <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+      <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+    </a>
+  </div>
+  <aside class="left-panel">
+    <div class="content">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../profile/index.html">Profile</a>
+        <a href="index.html" class="active">Hometown</a>
+        <a href="../food/index.html">Local Food</a>
+        <a href="../tourist/index.html">Tourist Places</a>
+      </nav>
+    </div>
+  </aside>
+
+<div class="surabaya-hero">
+  <svg id="surabayaSvg" class="surabaya-svg" viewBox="0 0 1024 400" width="1024" height="400" xmlns="http://www.w3.org/2000/svg">
+  <text x="50%" y="100%" text-anchor="middle" dominant-baseline="ideographic"
+        class="surabaya-shadow" transform="translate(-6,6)">
+    SURABAYA
+  </text>
+  <defs>
+    <clipPath id="roundedRect">
+      <rect width="1024" height="400" rx="20" ry="20" fill="white"/>
+    </clipPath>
+    <filter id="dilate" x="-200%" y="-200%" width="500%" height="500%">
+      <feMorphology in="SourceGraphic" operator="dilate" radius="0" result="morph">
+        <animate attributeName="radius" begin="surabayaSvg.mouseover" dur="0.8s" to="160" fill="freeze" />
+        <animate attributeName="radius" begin="surabayaSvg.mouseout" dur="0.6s" to="0" fill="freeze" />
+      </feMorphology>
+      <feComposite in="morph" in2="SourceGraphic" operator="in" />
+    </filter>
+    <mask id="textMask" maskUnits="userSpaceOnUse">
+      <rect width="1024" height="400" fill="black" />
+      <g id="maskText" filter="url(#dilate)">
+        <text x="50%" y="100%" text-anchor="middle" dominant-baseline="ideographic" fill="white" class="surabaya-text">
+          SURABAYA
+        </text>
+      </g>
+    </mask>
+  </defs>
+  <image href="../css/images/surabaya-head2.jpg" width="1024" height="400" preserveAspectRatio="xMidYMax slice" mask="url(#textMask)" clip-path="url(#roundedRect)" />
+</svg>
+</div>
+
+  <p>
+    Surabaya is the capital of East Java and Indonesia's second-largest city after Jakarta, making it a key center for
+    business, education, and industry. Nicknamed the "City of Heroes," it played a crucial role in Indonesia's
+    independence movement, especially during the Battle of Surabaya in 1945, which became a symbol of national pride and
+    bravery. Today, Surabaya is a bustling metropolis where history and modern development blend seamlessly, featuring a
+    mix of colonial-era buildings, wide boulevards, and contemporary urban landscapes.
+  </p>
+  <main>
+    <section>
+      <h2>About My Hometown</h2>
+      <p>
+        My hometown is Surabaya, a place known for its friendly people,
+        cultural heritage, and beautiful natural scenery.
+        It's a city that blends tradition with modern life,
+        making it both comfortable to live in and exciting to explore.
+      </p>
+    </section>
+    <section>
+      <p>
+        The city is also known for its vibrant energy and strong sense of community. As one of the country's economic
+        powerhouses, Surabaya is home to major shipping ports and industries, earning it a reputation as the gateway to
+        eastern Indonesia. Despite its rapid growth, the city maintains a welcoming atmosphere, with locals often noted
+        for their straightforward and friendly character. Surabaya's culture reflects a rich Javanese heritage, mixed
+        with influences from Chinese, Arab, and European settlers who have shaped its identity over centuries.
+      </p>
+    </section>
+    <section>
+      <h2>Why I Love My Hometown</h2>
+      <ul>
+        <li>The people are warm and friendly.</li>
+        <li>Rich in traditions and cultural events.</li>
+        <li>Has beautiful scenery and relaxing atmosphere.</li>
+        <li>Delicious local food you can't find anywhere else.</li>
+      </ul>
+    </section>
+  </main>
+  <ul class="social-bottom">
+    <li><a href="https://www.instagram.com/leonoliver1911/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+    </li>
+    <li><a href="https://www.linkedin.com/in/lyonel-oliver-1919312a4/" target="_blank"><i
+          class="fab fa-linkedin-in icon"></i></a></li>
+    <li><a href="mailto:leonoliver1911@gmail.com"><i class="fas fa-envelope icon"></i></a></li>
+    <li><a href="https://github.com/lyoneloliver" target="_blank"><i class="fab fa-github icon"></i></a></li>
+  </ul>
+  <script src="../main.js"></script>
+</body>
+</html>

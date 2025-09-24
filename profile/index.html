@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lyonel Oliver Dwiputra - Profile</title>
+  <title>Quiz 1 - Profile</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/profilestyle.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/profilestyle.css">
 </head>
 
 <body>
@@ -22,11 +22,11 @@
   <aside class="left-panel">
     <div class="content">
       <nav>
-        <a href="index.html">Home</a>
-        <a href="profile.html" class="active">Profile</a>
-        <a href="hometown.html">Hometown</a>
-        <a href="food.html">Local Food</a>
-        <a href="tourist.html">Tourist Places</a>
+        <a href="../index.html">Home</a>
+        <a href="index.html" class="active">Profile</a>
+        <a href="../hometown/index.html">Hometown</a>
+        <a href="../food/index.html">Local Food</a>
+        <a href="../tourist/index.html">Tourist Places</a>
       </nav>
     </div>
   </aside>
@@ -35,10 +35,10 @@
       <div class="card-container">
         <div class="card-flipper">
           <div class="card-side card-front">
-            <img src="css/images/pic.jpeg" alt="Foto Depan">
+            <img src="../css/images/pic.jpeg">
           </div>
           <div class="card-side card-back">
-            <img src="css/images/pic2.jpg" alt="Foto Belakang">
+            <img src="../css/images/pic2.jpg">
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@
         <div class="hobby-card h1">
           <div class="hobby-inner">
             <div class="hobby-front">
-              <img src="css/images/coding.png" alt="Coding">
+              <img src="../css/images/coding.png" alt="Coding">
             </div>
             <div class="hobby-back">Coding</div>
           </div>
@@ -79,7 +79,7 @@
         <div class="hobby-card h2">
           <div class="hobby-inner">
             <div class="hobby-front">
-              <img src="css/images/badminton.png" alt="Badminton">
+              <img src="../css/images/badminton.png" alt="Badminton">
             </div>
             <div class="hobby-back">Badminton</div>
           </div>
@@ -87,7 +87,7 @@
         <div class="hobby-card h3">
           <div class="hobby-inner">
             <div class="hobby-front">
-              <img src="css/images/swimming.png" alt="Swimming">
+              <img src="../css/images/swimming.png" alt="Swimming">
             </div>
             <div class="hobby-back">Swimming</div>
           </div>
@@ -95,7 +95,7 @@
         <div class="hobby-card h4">
           <div class="hobby-inner">
             <div class="hobby-front">
-              <img src="css/images/music.png" alt="Music">
+              <img src="../css/images/music.png" alt="Music">
             </div>
             <div class="hobby-back">Music</div>
           </div>
@@ -103,7 +103,7 @@
         <div class="hobby-card h5">
           <div class="hobby-inner">
             <div class="hobby-front">
-              <img src="css/images/traveling.png" alt="Traveling">
+              <img src="../css/images/traveling.png" alt="Traveling">
             </div>
             <div class="hobby-back">Traveling</div>
           </div>
@@ -111,7 +111,7 @@
         <div class="hobby-card h6">
           <div class="hobby-inner">
             <div class="hobby-front">
-              <img src="css/images/gaming.png" alt="Gaming">
+              <img src="../css/images/gaming.png" alt="Gaming">
             </div>
             <div class="hobby-back">Gaming</div>
           </div>
@@ -119,7 +119,7 @@
         <div class="hobby-card h7">
           <div class="hobby-inner">
             <div class="hobby-front">
-              <img src="css/images/reading.png" alt="Reading">
+              <img src="../css/images/reading.png" alt="Reading">
             </div>
             <div class="hobby-back">Reading</div>
           </div>
@@ -142,7 +142,7 @@
     <li><a href="mailto:leonoliver1911@gmail.com"><i class="fas fa-envelope icon"></i></a></li>
     <li><a href="https://github.com/lyoneloliver" target="_blank"><i class="fab fa-github icon"></i></a></li>
   </ul>
-  <script src="main.js"></script>
+  <script src="../main.js"></script>
   <script>
     (function () {
       const reveals = document.querySelectorAll('.reveal');
@@ -160,6 +160,21 @@
       }, { threshold: 0.16 });
       reveals.forEach(r => io.observe(r));
     })();
+
+    const card = document.querySelector('.card-container');
+    const title = document.querySelector('.intro-title');
+    const sub = document.querySelector('.intro-sub');
+
+    card.addEventListener('mouseenter', () => {
+      title.innerHTML = "This<br>is my <br><span class='glint-text'>Cat</span>";
+      sub.textContent = "He’s a playful little cat who loves chasing strings and curling up in the sun, always making my day brighter with her curious antics.";
+    });
+
+    card.addEventListener('mouseleave', () => {
+      title.innerHTML = "Hello, I'm <span class='glint-text'>Lyonel Oliver Dwiputra</span>";
+      sub.textContent = "You can call me Leon. This is my personal page where you can get to know me, my interests, and my passions.";
+    });
+
   </script>
 </body>
 
