@@ -6,7 +6,7 @@ const overlay = document.querySelector('.page-transition-overlay');
 function toggleMenu() {
   menuToggle.classList.toggle('open');
   leftPanel.classList.toggle('show');
-  
+
   if (leftPanel.classList.contains('show')) {
     if (headlineContainer) {
       headlineContainer.classList.add('rotate');
@@ -65,3 +65,44 @@ menuLinks.forEach(link => {
     }, 500);
   });
 });
+
+let audioMp3 = null;
+let isPlaying = false;
+
+function initAudio() {
+  if (!audioMp3) {
+    audioMp3 = new Audio('/quiz1/music.mp3');
+    audioMp3.loop = true;
+  }
+}
+
+const audiosvg = document.querySelector('.audiosvg');
+const svgAudio = document.getElementById('svg-audio');
+const rippleCircle = document.getElementById('ripple-circle');
+const hoverCircle = document.querySelector('#hover-circle .st4');
+
+audiosvg.addEventListener('mouseenter', () => hoverCircle.style.fill = '#7691BA');
+audiosvg.addEventListener('mouseleave', () => hoverCircle.style.fill = '#486CA3');
+
+audiosvg.addEventListener('click', () => {
+  initAudio();
+  if (!isPlaying) playAudio();
+  else pauseAudio();
+});
+
+function playAudio() {
+  if (audioMp3) audioMp3.play().catch(e => console.log(e));
+  svgAudio.classList.add('spinning');
+  rippleCircle.classList.add('ripple-active');
+  isPlaying = true;
+}
+
+function pauseAudio() {
+  if (audioMp3) audioMp3.pause();
+  svgAudio.classList.remove('spinning');
+  rippleCircle.classList.remove('ripple-active');
+  isPlaying = false;
+}
+
+document.addEventListener('DOMContentLoaded', initAudio);
+

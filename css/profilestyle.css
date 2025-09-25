@@ -33,16 +33,28 @@ body {
 }
 
 .intro-sub {
+  margin-left: -12px;
   font-size: 1.7rem;
   margin-bottom: 1.25rem;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.25);
   padding: 0.75rem 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(4px);
   transform: translateY(-6px);
   transition: transform .3s ease, box-shadow .3s ease;
 }
+
+p,
+.about-desc,
+.future-desc,
+.intro-sub,
+.about h2,
+.hobbies h2,
+.future-goal h2,
+.hobby-back {
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9),
+    0 0 25px rgba(0, 0, 0, 0.8);
+}
+
 
 .card-container {
   width: 260px;
@@ -111,10 +123,8 @@ body {
   max-width: 900px;
   color: inherit;
   margin-bottom: 100px;
-  background: rgba(0, 0, 0, 0.25);
   padding: 0.75rem 1rem;
   border-radius: 0.75rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(4px);
   transform: translateY(-6px);
   transition: transform .3s ease, box-shadow .3s ease;
@@ -262,5 +272,3 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
-
